@@ -9,7 +9,7 @@ def create_character_breakdown(file_lines):
     
     return character_dict
 
-def count_exactly_n_occurences(file_lines):
+def calculate_check_sum(file_lines):
     character_dict = {}
     valid_word_count_two = 0
     valid_word_count_three = 0
@@ -22,7 +22,7 @@ def count_exactly_n_occurences(file_lines):
         if string_is_valid_with_n_occurences(character_dict, 3):
             valid_word_count_three += 1
 
-    return valid_word_count_two, valid_word_count_three
+    return valid_word_count_two * valid_word_count_three
 
 # Checks if n occurences exist 
 def string_is_valid_with_n_occurences(char_dict, occurences):
@@ -36,6 +36,5 @@ if __name__ == '__main__':
     file_lines = f.readlines()
     f.close()
 
-    num_of_ids_with_two, num_of_ids_with_three = count_exactly_n_occurences(file_lines)
-    check_sum = num_of_ids_with_two * num_of_ids_with_three
+    check_sum = calculate_check_sum(file_lines)
     print(check_sum)
