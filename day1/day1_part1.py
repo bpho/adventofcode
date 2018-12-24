@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def calculateResultingFrequency(input_file):
+def calculate_resulting_frequency(input_file):
     freq = 0
     for lines in input_file:
         if lines[0] is '+':
@@ -14,6 +14,6 @@ def calculateResultingFrequency(input_file):
 
 if __name__ == '__main__':
     f = open("day1/input.txt")
-    result_freq = calculateResultingFrequency(f)
+    result_freq = calculate_resulting_frequency(f)
     print("Resulting frequency is: {}".format(result_freq))
     f.close()
