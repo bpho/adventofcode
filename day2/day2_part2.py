@@ -2,6 +2,7 @@
 """
 Challenges:
 - Not the most efficient solution... O(kn^2)
+    - k is constant, the length of the string when comparing if both strings have that one character difference
 - Possible solutions... using a set and determining differences (^) in characters
 - Could also utilize python libraries that will check for similar strings
 """
