@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Challenges:
-- Not the most efficient solution... O(n^3)
+- Not the most efficient solution... O(kn^2)
 - Possible solutions... using a set and determining differences (^) in characters
 - Could also utilize python libraries that will check for similar strings
 """
